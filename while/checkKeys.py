@@ -1,3 +1,4 @@
+#key check sample
 while True :
     keyIn = input("q to quit")
     print(keyIn)
