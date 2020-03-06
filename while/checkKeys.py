@@ -1,4 +1,4 @@
-#key check sample
+#key check sample sg
 while True :
     keyIn = input("q to quit")
     print(keyIn)
