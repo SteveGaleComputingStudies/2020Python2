@@ -1,4 +1,4 @@
-#key check sample sg 06/03/20
+#key check sample sg 06/03/2020
 while True :
     keyIn = input("q to quit")
     print(keyIn)
