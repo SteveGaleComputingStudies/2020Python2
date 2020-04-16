@@ -1,4 +1,7 @@
 # https://datatofish.com/create-pandas-dataframe/
+#from vscode terminal prompt >
+#> python -m pip install pandas
+
 import pandas as pd
 
 cars = {'Brand': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'],

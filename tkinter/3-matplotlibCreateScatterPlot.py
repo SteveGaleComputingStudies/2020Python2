@@ -1,4 +1,7 @@
 # - https://datatofish.com/scatter-line-bar-charts-using-matplotlib/
+#from vscode terminal prompt >
+#> python -m pip install pandas
+#> python -m pip install matplotlib
 from pandas import DataFrame
 import matplotlib.pyplot as plt
 

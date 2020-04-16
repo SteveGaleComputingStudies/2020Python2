@@ -1,4 +1,6 @@
 # https://datatofish.com/create-pandas-dataframe/
+#from vscode terminal prompt >
+#> python -m pip install pandas
 #>python -m pip install xlrd
 import pandas as pd
 
