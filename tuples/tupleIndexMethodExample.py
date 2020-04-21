@@ -24,3 +24,10 @@ print(thistuple[appleIndex]) # thistuple[0]
 print()
 for i in range(0,len(thistuple)):
     print(thistuple[i])
+
+# for x in insects:
+#   print(x + insects.index(x))
+#   print(insects.index(x))
+
+
+
