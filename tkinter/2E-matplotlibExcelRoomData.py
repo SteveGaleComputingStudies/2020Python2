@@ -1,5 +1,6 @@
 # https://datatofish.com/create-pandas-dataframe/
 # https://datatofish.com/import-csv-file-python-using-pandas/
+# https://datatofish.com/scatter-line-bar-charts-using-matplotlib/
 # 
 #from vscode terminal prompt >
 #> python -m pip install pandas
