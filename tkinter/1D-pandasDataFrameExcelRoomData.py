@@ -1,4 +1,5 @@
 # https://datatofish.com/create-pandas-dataframe/
+# https://datatofish.com/import-csv-file-python-using-pandas/
 #from vscode terminal prompt >
 #> python -m pip install pandas
 #>python -m pip install xlrd
@@ -15,17 +16,5 @@ print (df)
 # filter out unneeded columns
 dfRoomTemp = df.filter(["Room", "Temperature"]) 
 
-# filter all rooms except E223
-filter = df["Room"] == "E223"
-dfE223Temp = df.where(filter, inplace=True)
-#filter unnecesary columns
-dfE223Temp = df.filter(["Time", "Temperature"])
-# order by time ascending
-dfE223Temp.sort_values("Time", inplace = True)
-
 print (dfRoomTemp)
-print (dfE223Temp)
 
-
-
-# importing pandas package 
