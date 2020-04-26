@@ -1,11 +1,11 @@
 
 #Geek translator
 # Using dictionaries.
-geek = {"404":"clueless. From the Web error message 404, page not found",
-"Googling": "searching the Internet using google search engine",
-"Keyboard plaque": "debris and grime found on a keyboard",
-"link Rot": "the process by which Web links become obsolete.",
-"Percussive maintenance":"the act of striking an electronic device to make it work"}
+geek = {"404":" page not found",
+"401": "unauthorised",
+"400": "bad request",
+"403": "forbidden.",
+"418":"im a teapot"}
 
 
 choice = None
