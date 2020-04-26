@@ -60,6 +60,10 @@ Geek translator
             print("\nOkay delete", term)
         else:
             print("\nCant do that", term, "doesn’t exist in the dictionary")
+# SG added choice = 5 to list all terms
+    elif choice == "5":                                             #select / display all terms
+        for term in geek:                                           
+            print("\n",term,"means", geek[term])
 # some unknown choice
     else:
         print("\nSorry, but",choice, "isn’t a valid choice")
