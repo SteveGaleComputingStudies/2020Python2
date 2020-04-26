@@ -25,10 +25,10 @@ Geek translator
 #exit
     if choice == "0":
         print("Good-bye")
-        break 
+        break                                                       #exit program
 #get a definition
     elif choice == "1":                                             #select / display term
-        term= input("What term do you want me to translate?")
+        term = input("What term do you want me to translate?")
         if term in geek:                                            #does the term exist?
             definition = geek[term]                                 #get the definition
             print("\n",term,"means", definition)
