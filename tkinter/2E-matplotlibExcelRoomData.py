@@ -30,7 +30,7 @@ print (dfRoomTemp)
 #put data into a pandas DataFrame   
 #df = DataFrame(Data,columns=['Unemployment_Rate','Stock_Index_Price'])
 
-#plot the data, xaxis / y axis  
+#plot the data, x axis is Room / y axis is temperature
 plt.scatter(df['Room'], df['Temperature'], color='green')
 
 #add the plot labels
