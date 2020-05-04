@@ -1,0 +1,6 @@
+1. New file?
+2. Second line 
+3. Still more
+4. The new line statements work in the text file.
+5. You can read it and print it out as well
+6. Appended line 
