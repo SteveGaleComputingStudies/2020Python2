@@ -21,13 +21,13 @@ dfE223Temp = DataFrame(e223tempData,columns=['Time','Temperature'])
 root= tk.Tk() 
 
 #plot Room temperatures 
-figure1 = plt.Figure(figsize=(6,5), dpi=100)
-ax1 = figure1.add_subplot(111)
-bar1 = FigureCanvasTkAgg(figure1, root)
-bar1.get_tk_widget().pack(side=tk.LEFT, fill=tk.BOTH)
-dfRoomTemp = dfRoomTemp[['Room','Temperature']].groupby('Room').sum()   #required to label axes correctly
-dfRoomTemp.plot(kind='bar', legend=True, ax=ax1)
-ax1.set_title('Room temperature')
+figure1 = plt.Figure(figsize=(6,5), dpi=100)            # Figure to display the plot
+ax1 = figure1.add_subplot(111)                          # Axes to use for the plot - subplot(m,n,p) divides the current figure into an m-by-n grid and creates axes in the position specified by p
+bar1 = FigureCanvasTkAgg(figure1, root)                 # bar1 widget - backend that combines matplotlib Figure with a tkinter Canvas and returns a Widget
+bar1.get_tk_widget().pack(side=tk.LEFT, fill=tk.BOTH)   # pack the bar1 widget onto the TkCanvas
+dfRoomTemp = dfRoomTemp[['Room','Temperature']].groupby('Room').sum()   ## arrange the dataFrame for plotting - required to label axes correctly
+dfRoomTemp.plot(kind='bar', legend=True, ax=ax1)        # plot the DataFrame to the Axes on the Figure
+ax1.set_title('Room temperature')                       # set the title of the Axis
 
 #plot E223 temperature
 figure2 = plt.Figure(figsize=(5,4), dpi=100)

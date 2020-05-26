@@ -25,13 +25,13 @@ df3 = DataFrame(data3,columns=['Interest_Rate','Stock_Index_Price'])
 
 root= tk.Tk() 
   
-figure1 = plt.Figure(figsize=(6,5), dpi=100)
-ax1 = figure1.add_subplot(111)
-bar1 = FigureCanvasTkAgg(figure1, root)
-bar1.get_tk_widget().pack(side=tk.LEFT, fill=tk.BOTH)
-df1 = df1[['Country','GDP_Per_Capita']].groupby('Country').sum()
-df1.plot(kind='bar', legend=True, ax=ax1)
-ax1.set_title('Country Vs. GDP Per Capita')
+figure1 = plt.Figure(figsize=(6,5), dpi=100)            # Figure to display the plot
+ax1 = figure1.add_subplot(111)                          # Axes to use for the plot - subplot(m,n,p) divides the current figure into an m-by-n grid and creates axes in the position specified by p
+bar1 = FigureCanvasTkAgg(figure1, root)                 # bar1 widget - backend that combines matplotlib Figure with a tkinter Canvas and returns a Widget
+bar1.get_tk_widget().pack(side=tk.LEFT, fill=tk.BOTH)   # pack the bar1 widget onto the TkCanvas
+df1 = df1[['Country','GDP_Per_Capita']].groupby('Country').sum()        # arrange the dataFrame for plotting
+df1.plot(kind='bar', legend=True, ax=ax1)               # plot the DataFrame to the Axes on the Figure
+ax1.set_title('Country Vs. GDP Per Capita')             # set the title of the Axis
 
 figure2 = plt.Figure(figsize=(5,4), dpi=100)
 ax2 = figure2.add_subplot(111)
