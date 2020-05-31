@@ -32,7 +32,7 @@ terry.swim()
 terry.swim_backwards()
 
 
-carrie = Clownfish("Casey")
+carrie = Clownfish("Casey")     # carrie?
 print(carrie.first_name + " " + carrie.last_name)
 carrie.swim()
 carrie.live_with_anemone()
