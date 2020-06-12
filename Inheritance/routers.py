@@ -35,7 +35,7 @@ class Layer3Switch(Router):
 def main():
     e220Mikrotik = WirelessRouter("E220_2.4", "192.168.210.220","192.168.220.250","192.168.220.0")
     e208Mikrotik = WirelessRouter("E208_2.4", "192.168.208.220","192.168.208.250","192.168.208.0")
-    e208Router = Layer3Switch("102.168.208.0","192.168.208.1","192.168.210.1","192.168.210.0")
+    e208Router = Layer3Switch("192.168.208.0","192.168.208.1","192.168.210.1","192.168.210.0")
 
     e220Mikrotik.ifconfig()
     e208Mikrotik.ifconfig()

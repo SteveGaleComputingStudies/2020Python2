@@ -8,9 +8,9 @@ class Fish:
         print("The fish can swim backwards.")
 
 class Trout(Fish):
-    def __init__(self, water = "freshwater"):
+    def __init__(self, first_name, water = "freshwater"):   # SG add the first_name parameter
         self.water = water
-        super().__init__("TroutFName")                 #SG note parent constructor needs a first name argument
+        super().__init__(first_name)                   # SG pass the parameter to parent constructor
 
 class Clownfish(Fish):
     def live_with_anemone(self):
@@ -49,9 +49,9 @@ print(sammy.skeleton)
 
 #super code
 
-terry = Trout()
+terry = Trout("Terry","RainWater")  # initialise first_name by passing parameter to the parent constructor
 # Initialize first name
-terry.first_name = "Terry"
+#terry.first_name = "Terry"
 # Use parent __init__() through super()
 print(terry.first_name + " " + terry.last_name)
 ### trout doesnt have eyelids - shark does #print(terry.eyelids)
